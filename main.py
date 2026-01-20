@@ -49,7 +49,6 @@ def identificar_grupo():
     angiosperma = input("Sua planta possui frutos e/ou flores? (s/n) ").lower()    
     while True:
         if angiosperma == "s":
-            classificacao="angiosperma"
             Angiosperma.exibir_classificação()
             print()
             return identificar_planta("angiosperma")

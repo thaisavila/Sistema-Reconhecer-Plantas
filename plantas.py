@@ -366,5 +366,3 @@ lista_plantas = [
     angiosperma9,
     angiosperma10,
 ]
-
-#briofita3.exibir_infos()

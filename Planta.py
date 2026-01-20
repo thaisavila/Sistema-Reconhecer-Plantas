@@ -31,6 +31,9 @@ class Planta:
       else:
         print(self.regiao[i], end=', ')
 
+  def _exibir_classificacao():
+    print("A classificação dessa planta é: {classificacao}")
+  
   def exibir_infos(self):
     self.exibir_nome_popular()
     self.exibir_nome_cientifico()
@@ -39,8 +42,3 @@ class Planta:
     self.exibir_curiosidades()
     print()
   
-  def listar(self):
-    pass
-
-planta1 = Planta("angiosperma","mangueira", "mangueiris", 5,15, "é a melhor planta", ["aaa", "bbb"])
-#planta1.exibir_regioes()
