@@ -3,7 +3,6 @@ from pteridofita import Pteridofita
 from gimnosperma import Gimnosperma
 from angiosperma import Angiosperma
 
-# Briófitas
 briofita1 = Briofita(
     classificacao="briofita",
     nome_popular="musgo de solo",
@@ -326,4 +325,46 @@ curiosidades="Trepadeira liana com sementes ricas em cafeína, base de bebidas e
 regiao=["Norte"]
 )
 
-briofita3.exibir_infos()
+lista_plantas = [
+    # Briofitas
+    briofita1,
+    briofita2,
+    briofita3,
+
+    # Pteridófitas
+    pteridofita1,
+    pteridofita2,
+    pteridofita3,
+    pteridofita4,
+    pteridofita5,
+    pteridofita6,
+    pteridofita7,
+    pteridofita8,
+    pteridofita9,
+    pteridofita10,
+
+    # Gimnospermas
+    gimnosperma1,
+    gimnosperma2,
+    gimnosperma3,
+    gimnosperma4,
+    gimnosperma5,
+    gimnosperma6,
+    gimnosperma7,
+    gimnosperma8,
+    gimnosperma9,
+
+    # Angiospermas
+    angiosperma1,
+    angiosperma2,
+    angiosperma3,
+    angiosperma4,
+    angiosperma5,
+    angiosperma6,
+    angiosperma7,
+    angiosperma8,
+    angiosperma9,
+    angiosperma10,
+]
+
+#briofita3.exibir_infos()

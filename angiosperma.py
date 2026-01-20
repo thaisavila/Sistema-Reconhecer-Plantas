@@ -1,8 +1,8 @@
 from Planta import Planta
 # Frutas e 
 class Angiosperma(Planta):
-  def __init__(self, classificacao, nome_popular, nome_cientifico, altura_minima, altura_maxima, cor_principal_folhas, outras_cores_folhas, curiosidades,cor_do_fruto):
-    super().__init__(classificacao,nome_popular, nome_cientifico, altura_minima, altura_maxima, cor_principal_folhas, outras_cores_folhas, curiosidades)
+  def __init__(self, classificacao, nome_popular, nome_cientifico, altura_minima, altura_maxima, curiosidades,regiao,cor_do_fruto="azul"):
+    super().__init__(classificacao,nome_popular, nome_cientifico, altura_minima, altura_maxima, curiosidades,regiao)
     self.cor_do_fruto = cor_do_fruto
 
   

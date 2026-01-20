@@ -37,7 +37,9 @@ class Planta:
     self.exibir_altura()
     self.exibir_regioes()
     self.exibir_curiosidades()
+  
+  def listar(self):
+    pass
 
-#planta1 = Planta("angiosperma","mangueira", "mangueiris", 5,15, "é a melhor planta", ["aaa", "bbb"])
-#planta1.exibir_curiosidades()
+planta1 = Planta("angiosperma","mangueira", "mangueiris", 5,15, "é a melhor planta", ["aaa", "bbb"])
 #planta1.exibir_regioes()
