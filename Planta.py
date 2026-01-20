@@ -37,6 +37,7 @@ class Planta:
     self.exibir_altura()
     self.exibir_regioes()
     self.exibir_curiosidades()
+    print()
   
   def listar(self):
     pass

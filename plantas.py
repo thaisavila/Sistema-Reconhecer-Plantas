@@ -271,7 +271,7 @@ nome_popular="Cajueiro",
 nome_cientifico="Anacardium occidentale",
 altura_minima=6.0,
 altura_maxima=14.0,
-curiosidades="Árvore com pseudofruto suculento e castanha oleaginosa, adaptada a solos pobres.",
+curiosidades="O que conhecemos como frut do caju na verdade é um pseudofruto e o fruto verdadeiro do cajueiro é a castanha, que é formada por três partes: casca, película e amêndoa(que é a semente)",
 regiao=["Nordeste", "Centro-Oeste"]
 )
 

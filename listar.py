@@ -8,10 +8,14 @@ class Listar:
         print(cont,".")
         planta.exibir_infos()
 
-  def por_nome(self,nome):
+  def por_nome(self, nome):
+    encontrou = False
     for planta in lista_plantas:
-       if nome==planta.nome_popular or nome==planta.nome_cientifico:
-           planta.exibir_infos()
+        if nome == planta.nome_popular or nome == planta.nome_cientifico:
+            planta.exibir_infos()
+            encontrou = True
+    if not encontrou:
+        print("Nenhuma planta encontrada com esse nome.")
 
   def por_classificacao(self,classificacao):
    cont=0
@@ -21,7 +25,7 @@ class Listar:
            print(cont, ".")
            planta.exibir_infos()
 
-  def planta_especifica(self,classificacao, altura,regiao,cor_do_fruto):
+  def planta_especifica(self,classificacao, altura,regiao,cor_do_fruto="nenhuma"):
     cont=0
     for planta in lista_plantas:
        if planta.classificacao=="angiosperma" and altura>=planta.altura_minima and altura<=planta.altura_maxima and regiao in planta.regiao and cor_do_fruto==planta.cor_do_fruto:
@@ -33,6 +37,7 @@ class Listar:
            print(cont, ".")
            planta.exibir_infos()
            print()
+    if cont ==0:
+       print("Nenhuma planta foi encontrada com essas características!")
 
-listar = Listar()
-listar.por_nome
+#listar = Listar()

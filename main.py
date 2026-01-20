@@ -8,29 +8,38 @@ from plantas import *
 listar = Listar()
 
 def identificar_planta(classificacao):
-    altura = int(input("Digite a altura da sua planta em metros: "))
-    print("Digite a região que sua planta pertence")
-    regiao = input("Opções disponíveis: Norte, Nordeste, Sul, Suldeste, Centro-Oeste: ").lower()
-    if classificacao == "angiosperma":
-        cor_do_fruto = input("Digite a cor do fruto (por fora): ").lower()
-        listar.planta_especifica("angiosperma",altura,regiao,cor_do_fruto)
-    else:
-        listar.planta_especifica("angiosperma",altura,regiao)
-
+    continuar = input("Você deseja continuar para identificar a planta? (s/n) ").lower()
+    while continuar != "s" and continuar != "n":
+        continuar = input("Você deseja continuar para identificar a planta? (s/n)").lower()
+    
+    if continuar == "s":
+        altura = int(input("Digite a altura da sua planta em metros: "))
+        print("Digite a região que sua planta pertence")
+        regiao = input("Opções disponíveis: Norte, Nordeste, Sul, Suldeste, Centro-Oeste: ").capitalize()
+        if classificacao == "angiosperma":
+            cor_do_fruto = input("Digite a cor do fruto (por fora): ").capitalize()
+            print("=== Possíveis plantas ===")
+            listar.planta_especifica("angiosperma",altura,regiao,cor_do_fruto)
+        else:
+            print("=== Possíveis plantas ===")
+            listar.planta_especifica(classificacao,altura,regiao)
+    else: 
+        return
 
 def identificar_grupo():
     print("\n=== Identificar planta por característica ===")
     # Identificar se é uma briófita    
     print("Sua planta possui vasos condutores?\n")
-    print("Observações para identificara olho nu se tem ou não vasos condutores: Se parece um musgo ou um“tapete” muito baixo, formando uma camada fina sobre pedra, tronco ou solo úmido, sem raiz, caule e folhas verdadeiros = sem vasos condutores.\n Se tem caule e folhas bem definidos ou forma uma árvore ou arbusto = tem vasos condutores")
-    briofita = input("\nDigite s ou n:").lower()
+    print("Observações para identificar a olho nu se tem ou não vasos condutores: \nSe parece um musgo ou um “tapete” muito baixo, formando uma camada fina sobre pedra, tronco ou solo úmido, sem raiz, caule e folhas verdadeiros = sem vasos condutores. \nSe tem caule e folhas bem definidos ou forma uma árvore ou arbusto = tem vasos condutores")
+    briofita = input("\nDigite s ou n: ").lower()
     while True:
         if briofita == "n":
             classificacao="briofita"
             Briofita.exibir_classificação()
             print()
             print("Possíveis plantas: ")
-            listar.listar_plantas_classificacao()
+            return listar.por_classificacao("briofita")
+            
         elif briofita == "s":
             break
         else:
@@ -42,6 +51,8 @@ def identificar_grupo():
         if angiosperma == "s":
             classificacao="angiosperma"
             Angiosperma.exibir_classificação()
+            print()
+            return identificar_planta("angiosperma")
         elif angiosperma == "n":
             break
         else:    
@@ -49,23 +60,19 @@ def identificar_grupo():
     
     # Identificar se é uma gimnosperma ou pteridofita
     gimnosperma = input("Sua planta possui semente? (s/n) ").lower()
-    while gimnosperma != "s" and "n":
-        if gimnosperma == "s":
-            classificacao = "gimnosperma"
-            Gimnosperma.exibir_classificacao()
-        elif gimnosperma == "n":
-            classificacao = "pteridofita"
-            Pteridofita.exibir_classificacao()
-        else:
-            gimnosperma = input("Sua planta possui semente? (s/n)").lower()
+    while gimnosperma != "s" and gimnosperma== "n":
+        gimnosperma = input("Sua planta possui semente? (s/n) ").lower()
+        
+    if gimnosperma == "s":
+        Gimnosperma.exibir_classificacao()
+        print()
+        return identificar_planta("gimnosperma")
+        
+    elif gimnosperma == "n":
+        Pteridofita.exibir_classificacao()
+        print()
+        return identificar_planta("pteridofita")
     
-    # Menu para identificar a planta específica
-    identificar_planta = input("Você deseja continuar para identificar a planta? (s/n)").lower()
-    if identificar_planta == "s":
-        identificar_planta(classificacao)
-    else:
-        return
-
 def identificar_por_nome():
     print("\n=== Identificar planta por nome ===")
     nome = input("Digite o nome da planta (nome popular ou científico): ").capitalize()
