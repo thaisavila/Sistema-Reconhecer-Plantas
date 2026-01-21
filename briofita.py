@@ -12,7 +12,7 @@ class Briofita(Planta):
     super()._exibir_curiosidades()
     print()
     
-  def exibir_classificação():
+  def exibir_classificacao():
     print("\nEssa planta é uma briófita!\n")
     print("Briófitas são plantas avasculares de pequeno porte (0,5-20 cm) que formam tapetes verdes em locais úmidos e sombreados, como rochas e troncos de árvores. Não possuem flores, sementes ou frutos e dependem da água para reprodução. ")
 

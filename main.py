@@ -35,7 +35,7 @@ def identificar_grupo():
     briofita = input("\nDigite s ou n: ").lower()
     while True:
         if briofita == "n":
-            Briofita.exibir_classificação()
+            Briofita.exibir_classificacao()
             print()
             print("Possíveis plantas: ")
             return listar.por_classificacao("briofita")
@@ -50,7 +50,7 @@ def identificar_grupo():
     angiosperma = input("Sua planta possui frutos e/ou flores? (s/n) ").lower()    
     while True:
         if angiosperma == "s":
-            Angiosperma.exibir_classificação()
+            Angiosperma.exibir_classificacao()
             print()
             return identificar_planta("angiosperma")
         elif angiosperma == "n":
