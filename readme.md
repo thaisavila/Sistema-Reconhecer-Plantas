@@ -3,7 +3,8 @@ Esse sistema visa facilitar a identificação e classificação de plantas repre
 Esse Sistema foi criado para o projeto final da disciplina de POO do curso Análise e Desenvolvimento de Sistemas no semestre de 2025.2.
 
 ## Diagrama de classes (UML)
-<img width="1555" height="924" alt="image" src="https://github.com/user-attachments/assets/809983d2-bcb9-4337-a225-be86699b7e32" />
+<img width="1537" height="971" alt="image" src="https://github.com/user-attachments/assets/e998c7b6-72b2-40c5-ab2d-f82aac2023b4" />
+
 
 
 Como é possível perceber no UML, o sistema possui 5 classes:
