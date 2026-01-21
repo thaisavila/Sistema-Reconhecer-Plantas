@@ -8,22 +8,22 @@ class Planta:
     self.curiosidades = curiosidades
     self.regiao = regiao
 
-  def exibir_nome_popular(self):
+  def _exibir_nome_popular(self):
     print(f"Nome popular: {self.nome_popular}")
 
-  def exibir_nome_cientifico(self):
+  def _exibir_nome_cientifico(self):
     print(f"Nome científico: {self.nome_cientifico}")
 
-  def exibir_altura(self):
+  def _exibir_altura(self):
     print(f"Altura (planta adulta): Entre {self.altura_minima} m e {self.altura_maxima} m")
 
-  def exibir_curiosidades(self):
+  def _exibir_curiosidades(self):
     if self.curiosidades == "":
       return
     else:
       print(f"Curiosidades: {self.curiosidades}")    
 
-  def exibir_regioes(self):
+  def _exibir_regioes(self):
     print("Regiões encontrada: ", end='')
     for i in range(len(self.regiao)):
       if i == len(self.regiao) - 1:
@@ -31,14 +31,14 @@ class Planta:
       else:
         print(self.regiao[i], end=', ')
 
-  def _exibir_classificacao():
+  def __exibir_classificacao():
     print("A classificação dessa planta é: {classificacao}")
   
   def exibir_infos(self):
-    self.exibir_nome_popular()
-    self.exibir_nome_cientifico()
-    self.exibir_altura()
-    self.exibir_regioes()
-    self.exibir_curiosidades()
+    self._exibir_nome_popular()
+    self._exibir_nome_cientifico()
+    self._exibir_altura()
+    self._exibir_regioes()
+    self._exibir_curiosidades()
     print()
   

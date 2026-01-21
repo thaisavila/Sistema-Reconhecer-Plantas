@@ -232,7 +232,8 @@ nome_cientifico="Theobroma grandiflorum",
 altura_minima=6.0,
 altura_maxima=20.0,
 curiosidades="Árvore da família do cacau com frutos grandes ricos em polpa aromática, usada em sucos e doces.",
-regiao=["Norte"]
+regiao=["Norte"],
+cor_do_fruto="Marrom"
 )
 
 angiosperma2 = Angiosperma(
@@ -242,7 +243,8 @@ nome_cientifico="Euterpe oleracea",
 altura_minima=10.0,
 altura_maxima=25.0,
 curiosidades="Palmeira esguia de várzeas amazônicas, com cachos de frutos roxos nutritivos.",
-regiao=["Norte"]
+regiao=["Norte"],
+cor_do_fruto="Roxo"
 )
 
 angiosperma3 = Angiosperma(
@@ -252,7 +254,8 @@ nome_cientifico="Ziziphus joazeiro",
 altura_minima=5.0,
 altura_maxima=16.0,
 curiosidades="Árvore pioneira da Caatinga com frutos comestíveis e copa larga espinhosa.",
-regiao=["Nordeste"]
+regiao=["Nordeste"],
+cor_do_fruto="Amarelo"
 )
 
 angiosperma4 = Angiosperma(
@@ -262,7 +265,8 @@ nome_cientifico="Cereus jamacaru",
 altura_minima=3.0,
 altura_maxima=16.0,
 curiosidades="Cacto columnar icônico da Caatinga com flores noturnas e frutos vermelhos.",
-regiao=["Nordeste"]
+regiao=["Nordeste"],
+cor_do_fruto="Vermelho"
 )
 
 angiosperma5 = Angiosperma(
@@ -271,8 +275,9 @@ nome_popular="Cajueiro",
 nome_cientifico="Anacardium occidentale",
 altura_minima=6.0,
 altura_maxima=14.0,
-curiosidades="O que conhecemos como frut do caju na verdade é um pseudofruto e o fruto verdadeiro do cajueiro é a castanha, que é formada por três partes: casca, película e amêndoa(que é a semente)",
-regiao=["Nordeste", "Centro-Oeste"]
+curiosidades="O que conhecemos como fruto do caju na verdade é um pseudofruto e o fruto verdadeiro do cajueiro é a castanha, que é formada por três partes: casca, película e amêndoa(que é a semente)",
+regiao=["Nordeste", "Centro-Oeste"],
+cor_do_fruto="Amarelo"
 )
 
 angiosperma6 = Angiosperma(
@@ -282,7 +287,8 @@ nome_cientifico="Hymenaea courbaril",
 altura_minima=15.0,
 altura_maxima=40.0,
 curiosidades="Árvore majestosa com resina medicinal e madeira resistente usada em construção.",
-regiao=["Centro-Oeste", "Nordeste"]
+regiao=["Centro-Oeste", "Nordeste"],
+cor_do_fruto="Marrom"
 )
 
 angiosperma7 = Angiosperma(
@@ -292,7 +298,8 @@ nome_cientifico="Handroanthus impetiginosus",
 altura_minima=8.0,
 altura_maxima=12.0,
 curiosidades="Árvore ornamental com flores roxas vibrantes no inverno, copa larga.",
-regiao=["Sudeste", "Centro-Oeste", "Nordeste", "Norte"]
+regiao=["Sudeste", "Centro-Oeste", "Nordeste", "Norte"],
+cor_do_fruto="Marrom"
 )
 
 angiosperma8 = Angiosperma(
@@ -302,7 +309,8 @@ nome_cientifico="Plinia cauliflora",
 altura_minima=3.0,
 altura_maxima=15.0,
 curiosidades="Árvore semidecídua com frutos doces nascendo no tronco e galhos.",
-regiao=["Sudeste", "Sul", "Nordeste"]
+regiao=["Sudeste", "Sul", "Nordeste"],
+cor_do_fruto="Roxo"
 )
 
 angiosperma9 = Angiosperma(
@@ -312,7 +320,8 @@ nome_cientifico="Eugenia uniflora",
 altura_minima=2.0,
 altura_maxima=7.0,
 curiosidades="Arbusto com frutos vermelhos aromáticos, usado em cercas vivas.",
-regiao=["Sul", "Sudeste"]
+regiao=["Sul", "Sudeste"],
+cor_do_fruto="Vermelho"
 )
 
 angiosperma10 = Angiosperma(
@@ -322,7 +331,8 @@ nome_cientifico="Paullinia cupana",
 altura_minima=3.0,
 altura_maxima=10.0,
 curiosidades="Trepadeira liana com sementes ricas em cafeína, base de bebidas energéticas.",
-regiao=["Norte"]
+regiao=["Norte"],
+cor_do_fruto="Vermelho"
 )
 
 lista_plantas = [

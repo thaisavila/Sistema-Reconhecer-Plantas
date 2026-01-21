@@ -1,15 +1,15 @@
 from Planta import Planta
 
 class Briofita(Planta):
-  def exibir_altura(self):
+  def _exibir_altura(self):
     print("Altura (planta adulta): Entre 5 cm e 20 cm")
 
   def exibir_infos(self):
-    super().exibir_nome_popular()
-    super().exibir_nome_cientifico()
-    self.exibir_altura()
-    super().exibir_regioes()
-    super().exibir_curiosidades()
+    super()._exibir_nome_popular()
+    super()._exibir_nome_cientifico()
+    self._exibir_altura()
+    super()._exibir_regioes()
+    super()._exibir_curiosidades()
     print()
     
   def exibir_classificação():

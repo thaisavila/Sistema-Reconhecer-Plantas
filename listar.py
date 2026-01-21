@@ -32,7 +32,7 @@ class Listar:
            cont+=1
            print(cont, ".")
            planta.exibir_infos()
-       elif planta.classificacao==classificacao and altura>=planta.altura_minima and altura<=planta.altura_maxima and regiao in planta.regiao:
+       elif planta.classificacao!="angiosperma" and planta.classificacao==classificacao and altura>=planta.altura_minima and altura<=planta.altura_maxima and regiao in planta.regiao:
            cont+=1
            print(cont, ".")
            planta.exibir_infos()

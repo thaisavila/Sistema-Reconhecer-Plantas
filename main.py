@@ -10,12 +10,13 @@ listar = Listar()
 def identificar_planta(classificacao):
     continuar = input("Você deseja continuar para identificar a planta? (s/n) ").lower()
     while continuar != "s" and continuar != "n":
+        print("Você digitou algo errado! Digite s ou n")
         continuar = input("Você deseja continuar para identificar a planta? (s/n)").lower()
     
     if continuar == "s":
         altura = int(input("Digite a altura da sua planta em metros: "))
         print("Digite a região que sua planta pertence")
-        regiao = input("Opções disponíveis: Norte, Nordeste, Sul, Suldeste, Centro-Oeste: ").capitalize()
+        regiao = input("Opções disponíveis: Norte, Nordeste, Sul, Sudeste, Centro-Oeste: ").capitalize()
         if classificacao == "angiosperma":
             cor_do_fruto = input("Digite a cor do fruto (por fora): ").capitalize()
             print("=== Possíveis plantas ===")
@@ -34,7 +35,6 @@ def identificar_grupo():
     briofita = input("\nDigite s ou n: ").lower()
     while True:
         if briofita == "n":
-            classificacao="briofita"
             Briofita.exibir_classificação()
             print()
             print("Possíveis plantas: ")
@@ -43,6 +43,7 @@ def identificar_grupo():
         elif briofita == "s":
             break
         else:
+            print("Você digitou algo errado! Digite s ou n")
             briofita = input("Sua planta possui vasos condutores? (s/n) ").lower()
     
     # Identificar se é uma angiosperma
@@ -59,7 +60,8 @@ def identificar_grupo():
     
     # Identificar se é uma gimnosperma ou pteridofita
     gimnosperma = input("Sua planta possui semente? (s/n) ").lower()
-    while gimnosperma != "s" and gimnosperma== "n":
+    while gimnosperma != "s" and gimnosperma != "n":
+        print("Você digitou algo errado! Digite s ou n")
         gimnosperma = input("Sua planta possui semente? (s/n) ").lower()
         
     if gimnosperma == "s":
@@ -95,7 +97,7 @@ def menu():
         elif opcao == "3":
             listar.todas()
         elif opcao == "4":
-            print("Saindo do programa...\nAté a próxima!")
+            print("\nSaindo do programa...\nAté a próxima!")
             break
         else:
             print("Opção inválida, tente novamente.")
